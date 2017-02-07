@@ -1,27 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Angular QuickStart</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="/">
+    <head>
+        <title>Angular QuickStart</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="/">
 
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
-    <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
+        <!-- Polyfill(s) for older browsers -->
+        <script src="node_modules/core-js/client/shim.min.js"></script>
 
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
+        <script src="node_modules/zone.js/dist/zone.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
 
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('main.js').catch(function(err){ console.error(err); });
-    </script>
-  </head>
+        <script src="systemjs.config.js"></script>
+        <script>
+          System.import('main.js').catch(function(err){ console.error(err); });
+        </script>
+    </head>
 
-  <body>
-    <my-app>Loading AppComponent content here ...</my-app>
-  </body>
+    <body>
+
+        <!-- Header -->
+        <div id="header">
+            <div class="navbar paper-bg navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header paperMenuItem-bg">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="">ABS Finance</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="paperMenuItem-bg"><a href="">First north</a></li>
+                            <li class="paperMenuItem-bg"><a href="">Small cap</a></li>
+                            <li class="paperMenuItem-bg"><a href="">Mid cap</a></li>
+                            <li class="paperMenuItem-bg"><a href="">Large cap</a></li>
+                            <li class="paperMenuItem-bg"><a href=""></a></li>
+                            <li class="paperMenuItem-bg"><a href="">Makroindikatorer</a></li>
+                            <li class="paperMenuItem-bg"><a href="">Teknisk analys</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div id="content">
+            <div class="container wrapper">
+                <my-app>Loading...</my-app>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <p class="footerText">&copy; 2017 - ABS Finance</p>
+        </div>
+
+    </body>
 </html>
